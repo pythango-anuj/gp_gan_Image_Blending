@@ -98,6 +98,7 @@ def main():
     folders = sorted(
         [folder for folder in os.listdir(args.data_root) if os.path.isdir(os.path.join(args.data_root, folder))])
     val_end = int(args.val_ratio * len(folders))
+    print(folders)
     print('\t{} folders in total, {} val folders ...'.format(len(folders), val_end))
     trainset = BlendingDataset(args.train_samples, folders[val_end:], args.data_root, args.ratio, args.load_size,
                                args.image_size)
