@@ -44,13 +44,13 @@ def main():
     parser.add_argument('--load_size', type=int, default=64, help='Scale image to load_size')
     parser.add_argument('--image_size', type=int, default=64, help='The height / width of the input image to network')
     parser.add_argument('--ratio', type=float, default=0.5, help='Ratio for center square size v.s. image_size')
-    parser.add_argument('--val_ratio', type=float, default=0.05, help='Ratio for validation set v.s. data set')
+    parser.add_argument('--val_ratio', type=float, default=0.1, help='Ratio for validation set v.s. data set')
 
     parser.add_argument('--d_iters', type=int, default=5, help='# of D iters per each G iter')
     parser.add_argument('--clamp_lower', type=float, default=-0.01, help='Lower bound for clipping')
     parser.add_argument('--clamp_upper', type=float, default=0.01, help='Upper bound for clipping')
 
-    parser.add_argument('--experiment', default='encoder_decoder_blending_result',
+    parser.add_argument('--experiment', default='trained_blending_result',
                         help='Where to store samples and models')
     parser.add_argument('--test_folder', default='samples', help='Where to store test results')
     parser.add_argument('--workers', type=int, default=4, help='# of data loading workers')
