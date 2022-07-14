@@ -38,7 +38,7 @@ def main():
     parser.add_argument('--l2_weight', type=float, default=0.999, help='Weight for l2 loss, default=0.999')
 
     parser.add_argument('--gpu', type=int, default=0, help='GPU ID (negative value indicates CPU)')
-    parser.add_argument('--n_epoch', type=int, default=25, help='# of epochs to train for')
+    parser.add_argument('--n_epoch', type=int, default=3, help='# of epochs to train for')
 
     parser.add_argument('--data_root', help='Path to dataset')
     parser.add_argument('--load_size', type=int, default=64, help='Scale image to load_size')
@@ -54,8 +54,8 @@ def main():
                         help='Where to store samples and models')
     parser.add_argument('--test_folder', default='samples', help='Where to store test results')
     parser.add_argument('--workers', type=int, default=4, help='# of data loading workers')
-    parser.add_argument('--batch_size', type=int, default=64, help='Input batch size')
-    parser.add_argument('--test_size', type=int, default=64, help='Batch size for testing')
+    parser.add_argument('--batch_size', type=int, default=32, help='Input batch size')
+    parser.add_argument('--test_size', type=int, default=32, help='Batch size for testing')
 
     parser.add_argument('--train_samples', type=int, default=150000, help='# of training examples')
     parser.add_argument('--test_samples', type=int, default=256, help='# of testing examples')
