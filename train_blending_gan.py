@@ -38,7 +38,7 @@ def main():
     parser.add_argument('--l2_weight', type=float, default=0.999, help='Weight for l2 loss, default=0.999')
 
     parser.add_argument('--gpu', type=int, default=0, help='GPU ID (negative value indicates CPU)')
-    parser.add_argument('--n_epoch', type=int, default=3, help='# of epochs to train for')
+    parser.add_argument('--n_epoch', type=int, default=25, help='# of epochs to train for')
 
     parser.add_argument('--data_root', help='Path to dataset')
     parser.add_argument('--load_size', type=int, default=64, help='Scale image to load_size')
