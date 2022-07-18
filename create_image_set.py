@@ -11,11 +11,11 @@ parser.add_argument('--input', help='Path to input image.', default='')
 args = parser.parse_args()
 src_dir= '/content/GP-GAN/DataBase/DentraTrainingData/data/GT/*.jpeg'
 images = glob.glob(src_dir)
-nf=76
+nf=123
 j=0
 for image in images:
     j+=1
-    if j<=76:
+    if j<=123:
       continue
     args.input = image
     image = cv.imread(cv.samples.findFile(args.input))

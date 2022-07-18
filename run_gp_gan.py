@@ -38,7 +38,7 @@ def main():
     parser.add_argument('--n_iteration', type=int, default=1000, help='# of iterations for optimizing z')
 
     parser.add_argument('--gpu', type=int, default=0, help='GPU ID (negative value indicates CPU)')
-    parser.add_argument('--g_path', default='models/blending_gan.npz', help='Path for pretrained Blending GAN model')
+    parser.add_argument('--g_path', default='models/g_epoch_1.npz', help='Path for pretrained Blending GAN model')
     parser.add_argument('--unsupervised_path', default='models/unsupervised_blending_gan.npz',
                         help='Path for pretrained unsupervised Blending GAN model')
     parser.add_argument('--list_path', default='',
