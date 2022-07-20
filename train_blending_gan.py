@@ -50,7 +50,7 @@ def main():
     parser.add_argument('--clamp_lower', type=float, default=-0.01, help='Lower bound for clipping')
     parser.add_argument('--clamp_upper', type=float, default=0.01, help='Upper bound for clipping')
 
-    parser.add_argument('--experiment', default='trained_blending_result',
+    parser.add_argument('--experiment', default='/content/drive/MyDrive/trained_blending_result',
                         help='Where to store samples and models')
     parser.add_argument('--test_folder', default='samples', help='Where to store test results')
     parser.add_argument('--workers', type=int, default=4, help='# of data loading workers')
